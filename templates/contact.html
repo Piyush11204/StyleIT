@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% block body %}
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="staitc/css/Home.css">
+<link rel="stylesheet" href="static/css/contact.css">
+<body>
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have a question? Reach out to us!</p>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact Number:</label>
+          <input type="tel" id="contact" name="contact" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="photo">Upload Photo:</label>
+          <input type="file" id="photo" name="photo" accept="image/*" />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+{% endblock %}

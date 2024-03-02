@@ -1,0 +1,16 @@
+/* .col{
+    padding: 10px;
+    margin:  5px;
+    width: 19rem;
+	margin-bottom: 10px;
+	color: #fff;
+    background-color: #e8e8e89a;
+} */
+
+.btn btn-primary{
+    width: 100%;
+}
+.btn :hover {
+    background-color: #8dc8db;
+    
+}

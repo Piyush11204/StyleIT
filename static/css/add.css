@@ -1,0 +1,109 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/contactPhoto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation styles */
+
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
