@@ -3,11 +3,11 @@ from .models import ShopIT
 
 # Create your views here.
 def index(request):
-
-    return render(request,"index.html")
+    shopIT = ShopIT.objects.all() 
+    return render(request,"index.html",{'shopIT':shopIT})
     # return HttpResponse(" My self Piyush yadav")
 def about(request):
-    #return HttpResponse(" I am for vidyaverdini's college of engineering and technology")
+    #return HttpResponse("zoro is lost again!!! ")
     return render ( request, 'about.html')
 
 def add(request):
@@ -19,7 +19,7 @@ def base(request):
     return render ( request, 'base.html')
 
 def recently(request):
-    shopIT = ShopIT.objects.all()  # get the last 5 records
+    shopIT = ShopIT.objects.all()  
     return render ( request, 'recently.html', {'shopIT':shopIT})
 
 def admin(request):

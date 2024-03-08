@@ -9,7 +9,8 @@ admin.site.index_title = "Welcome to Supe Admin Panel!"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('cart/', include('cart.urls'))
     
    
 ]

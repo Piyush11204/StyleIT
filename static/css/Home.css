@@ -3,40 +3,37 @@ body {
 
 }
 
-	
+
 .c-item {
 	max-height: 660px;
 
 }
 
-.c-img{
+.c-img {
 	height: 100%;
 	object-fit: scale-down;
 	filter: brightness(0.9);
 }
 
-.primg{
+.primg {
 	min-height: 300px;
 	min-width: 200px;
 	max-height: 350px;
 	max-width: 250px;
 }
 
-.prodctr{
+.prodctr {
 	max-width: 100vw;
 }
-.podctrbox{
+
+.podctrbox {
 	margin-bottom: 10px;
 	color: #fff;
 	width: fit-content;
 }
-.product-head{
+
+.product-head {
 	background-color: #e8e8e89a;
 
 	color: #000000;
 }
-.bor{
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
-}
-

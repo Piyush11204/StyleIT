@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 {% block body %}
 <link
   rel="stylesheet"
@@ -21,29 +21,10 @@
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
   crossorigin="anonymous"
 ></script>
-
+<!-- <link rel="stylesheet" href="static/css/style.css"> -->
 <link rel="stylesheet" href="static/css/home.css">
-<link rel="stylesheet" href="static/css/recently.css">
 
 
+<h1 class="bg-dark">Cats in Cart</h1>
 
-    
-    <h1>Recently Added Vendors</h1>
-  <div class="row">
-    {% for shopIT in shopIT %}
-      <div class="col" >
-        <div class="card" style="width: 18rem;background-color: antiquewhite;
-        box-shadow: 20px 0 20px #4b4a47;">
-          <img src="{{ shopIT.img }}" class="card-img-top" alt="..." style="height: 400px; object-fit: cover ;">
-          <div class="card-body">
-            <H3 class="card-title">{{ shopIT.name }}</H3>
-            <p class="card-text">Rs: {{ shopIT.price }}</p>
-            <a href="" class="btn btn-primary">Add</a>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-
-    
-  
-{% endblock  %}
+{% endblock %}
